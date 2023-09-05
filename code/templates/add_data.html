@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>
+		Luddy Survey Questions
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		.container {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+		body {
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #cddc39;
+			max-width: 5000px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea{
+			width: 100%;
+			padding: 16px 20px;
+			border: none;
+			border-radius: 4px;
+			background-color: #f1f1f1;
+			}
+
+		/* Styling Button */
+		button {
+			background-color: #04AA6D;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			float: right;
+		}
+
+		button:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Add your response</h1>
+	<div class="container">
+	<!-- Create Form -->
+	<form id="form", action="/add_data", method="POST">
+
+
+		<div class="form-control">
+			<label for="q1" id="label-q1">
+				Are you a Luddy Student?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q1" id="q1">
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+				
+			</select>
+		</div>
+		
+		<div class="form-control">
+			<label for="q2" id="label-q2">
+				If you are Luddy student, what is your home department/program?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q2" id="q2">
+				<option value="Computer Science">Computer Science</option>
+				<option value="Data Science">Data Science</option>
+				<option value="Informatics">Informatics</option>
+				<option value="Other">Other</option>
+				<option value="Not from Luddy">Not from Luddy</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q3" id="label-q3">
+				Please rate your agreement with the following statements based on how you feel about the Luddy School. - People in the Luddy School notice when I am good at something
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q3" id="q3">
+				<option value="Strongly Disagree">Strongly Disagree</option>
+				<option value="Somewhat disagree">Somewhat disagree</option>
+				<option value="Neither agree nor disagree">Neither agree nor disagree</option>
+				<option value="Somewhat agree">Somewhat agree</option>
+				<option value="Strongly agree">Strongly agree</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q4" id="label-q4">
+				Please rate your agreement with the following statements based on how you feel about the Luddy School. - Faculty and staff in the Luddy School value my opinions
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q4" id="q4">
+				<option value="Strongly Disagree">Strongly Disagree</option>
+				<option value="Somewhat disagree">Somewhat disagree</option>
+				<option value="Neither agree nor disagree">Neither agree nor disagree</option>
+				<option value="Somewhat agree">Somewhat agree</option>
+				<option value="Strongly agree">Strongly agree</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q5" id="label-q5">
+				Please rate your agreement with the following statements based on how you feel about the Luddy School. - Other students in the Luddy School take my opinions seriously
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q5" id="q5">
+				<option value="Strongly Disagree">Strongly Disagree</option>
+				<option value="Somewhat disagree">Somewhat disagree</option>
+				<option value="Neither agree nor disagree">Neither agree nor disagree</option>
+				<option value="Somewhat agree">Somewhat agree</option>
+				<option value="Strongly agree">Strongly agree</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q6" id="label-q6">
+				Please rate your agreement with the following statements based on how you feel about the Luddy School. - Most faculty and staff in the Luddy School are interested in me.
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q6" id="q6">
+				<option value="Strongly Disagree">Strongly Disagree</option>
+				<option value="Somewhat disagree">Somewhat disagree</option>
+				<option value="Neither agree nor disagree">Neither agree nor disagree</option>
+				<option value="Somewhat agree">Somewhat agree</option>
+				<option value="Strongly agree">Strongly agree</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q7" id="label-q7">
+				Please rate your agreement with the following statements based on how you feel about the Luddy School. - There is at least one instructor or other faculty or staff member in the the Luddy School I can talk to if I have a problem.
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q7" id="q7">
+				<option value="Strongly Disagree">Strongly Disagree</option>
+				<option value="Somewhat disagree">Somewhat disagree</option>
+				<option value="Neither agree nor disagree">Neither agree nor disagree</option>
+				<option value="Somewhat agree">Somewhat agree</option>
+				<option value="Strongly agree">Strongly agree</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q8" id="label-q8">
+				Please rate your agreement with the following statements based on how you feel about the Luddy School. - People in the Luddy School are friendly to me.
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q8" id="q8">
+				<option value="Strongly Disagree">Strongly Disagree</option>
+				<option value="Somewhat disagree">Somewhat disagree</option>
+				<option value="Neither agree nor disagree">Neither agree nor disagree</option>
+				<option value="Somewhat agree">Somewhat agree</option>
+				<option value="Strongly agree">Strongly agree</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q9" id="label-q9">
+				Please rate your agreement with the following statements based on how you feel about the Luddy School. - Students in the Luddy School help each other to succeed.
+			</label>
+			
+			<!-- Dropdown options -->
+			<!-- Dropdown options -->
+			<select name="q9" id="q9">
+				<option value="Strongly Disagree">Strongly Disagree</option>
+				<option value="Somewhat disagree">Somewhat disagree</option>
+				<option value="Neither agree nor disagree">Neither agree nor disagree</option>
+				<option value="Somewhat agree">Somewhat agree</option>
+				<option value="Strongly agree">Strongly agree</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q10" id="label-q10">
+				Please rate your agreement with the following statements based on how you feel about the Luddy School. - I am treated with as much respect as other students.
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q10" id="q10">
+				<option value="Strongly Disagree">Strongly Disagree</option>
+				<option value="Somewhat disagree">Somewhat disagree</option>
+				<option value="Neither agree nor disagree">Neither agree nor disagree</option>
+				<option value="Somewhat agree">Somewhat agree</option>
+				<option value="Strongly agree">Strongly agree</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q11" id="label-q11">
+				Please rate your agreement with the following statements based on how you feel about the Luddy School. - I have a good relationship with other students in the Luddy School.
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q11" id="q11">
+				<option value="Strongly Disagree">Strongly Disagree</option>
+				<option value="Somewhat disagree">Somewhat disagree</option>
+				<option value="Neither agree nor disagree">Neither agree nor disagree</option>
+				<option value="Somewhat agree">Somewhat agree</option>
+				<option value="Strongly agree">Strongly agree</option>
+				
+			</select>
+		</div>
+
+
+		<div class="form-control">
+			<label for="q12" id="label-q12">
+				Please rate your agreement with the following statements based on how you feel about the Luddy School. - I can really be myself in the Luddy School.
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q12" id="q12">
+				<option value="Strongly Disagree">Strongly Disagree</option>
+				<option value="Somewhat disagree">Somewhat disagree</option>
+				<option value="Neither agree nor disagree">Neither agree nor disagree</option>
+				<option value="Somewhat agree">Somewhat agree</option>
+				<option value="Strongly agree">Strongly agree</option>
+				
+			</select>
+		</div>
+
+
+		<div class="form-control">
+			<label for="q13" id="label-q13">
+				Please rate your agreement with the following statements based on how you feel about the Luddy School. - The faculty and staff in the Luddy School respect me.
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q13" id="q13">
+				<option value="Strongly Disagree">Strongly Disagree</option>
+				<option value="Somewhat disagree">Somewhat disagree</option>
+				<option value="Neither agree nor disagree">Neither agree nor disagree</option>
+				<option value="Somewhat agree">Somewhat agree</option>
+				<option value="Strongly agree">Strongly agree</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q14" id="label-q14">
+				Please rate your agreement with the following statements based on how you feel about the Luddy School. - People in the Luddy School know I can do good work.
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q14" id="q14">
+				<option value="Strongly Disagree">Strongly Disagree</option>
+				<option value="Somewhat disagree">Somewhat disagree</option>
+				<option value="Neither agree nor disagree">Neither agree nor disagree</option>
+				<option value="Somewhat agree">Somewhat agree</option>
+				<option value="Strongly agree">Strongly agree</option>
+				
+			</select>
+		</div>
+
+
+		<div class="form-control">
+			<label for="q15" id="label-q15">
+				Please rate your agreement with the following statements based on how you feel about the Luddy School. - The instructors in the Luddy School give me compliments when I do something well.
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q15" id="q15">
+				<option value="Strongly Disagree">Strongly Disagree</option>
+				<option value="Somewhat disagree">Somewhat disagree</option>
+				<option value="Neither agree nor disagree">Neither agree nor disagree</option>
+				<option value="Somewhat agree">Somewhat agree</option>
+				<option value="Strongly agree">Strongly agree</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q16" id="label-q16">
+				Please rate your agreement with the following statements based on how you feel about the Luddy School. - Other students in the Luddy School like me the way I am.
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q16" id="q16">
+				<option value="Strongly Disagree">Strongly Disagree</option>
+				<option value="Somewhat disagree">Somewhat disagree</option>
+				<option value="Neither agree nor disagree">Neither agree nor disagree</option>
+				<option value="Somewhat agree">Somewhat agree</option>
+				<option value="Strongly agree">Strongly agree</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q17" id="label-q17">
+				Please rate your agreement with the following statements based on how you feel about the Luddy School. - Other students in the Luddy School like me the way I am.
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q17" id="q17">
+				<option value="Strongly Disagree">Strongly Disagree</option>
+				<option value="Somewhat disagree">Somewhat disagree</option>
+				<option value="Neither agree nor disagree">Neither agree nor disagree</option>
+				<option value="Somewhat agree">Somewhat agree</option>
+				<option value="Strongly agree">Strongly agree</option>
+				
+			</select>
+		</div>
+
+
+		<div class="form-control">
+			<label for="q18" id="label-q18">
+				Please rate your agreement with the following statements based on how you feel about the Luddy School. - Faculty and staff in the Luddy School really want me to succeed.
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q18" id="label-q18">
+				<option value="Strongly Disagree">Strongly Disagree</option>
+				<option value="Somewhat disagree">Somewhat disagree</option>
+				<option value="Neither agree nor disagree">Neither agree nor disagree</option>
+				<option value="Somewhat agree">Somewhat agree</option>
+				<option value="Strongly agree">Strongly agree</option>
+				
+			</select>
+		</div>
+		
+
+		<div class="form-control">
+			<label for="q19" id="label-q19">
+				How many years have you been at IU?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q19" id="q19">
+				<option value="this is my first year">this is my first year</option>
+				<option value="two years">two years</option>
+				<option value="three years">three years</option>
+				<option value="four years">four years</option>
+				<option value="more than four years">more than four years</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q20" id="label-q20">
+				I can master the content of the Luddy courses I am taking this semester
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q20" id="q20">
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q21" id="label-q21">
+				I could master the content of even the most challenging Luddy courses if I try
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q21" id="q21">
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q22" id="label-q22">
+				I can do a good job on all of my Luddy courses if I do not give up
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q22" id="q22">
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q23" id="q23">
+				I can do an excellent job on Luddy course-related problems and tasks assigned this semester
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q23" id="label-q23">
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q24" id="label-q24">
+				I can learn the content taught my Luddy courses
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q24" id="q24">
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q25" id="label-q25">
+				I can earn a good grade in the Luddy courses that I am taking this semester
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q25" id="q25">
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q26" id="label-q26">
+				How do you describe yourself? - Selected Choice
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q26" id="q26">
+				<option value="Female">Female</option>
+				<option value="Male">Male</option>
+				<option value="Non-binary / third gender">Non-binary / third gender</option>
+				<option value="Prefer not to say">Prefer not to say</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q27" id="label-q27">
+				Choose one or more races that you consider yourself to be
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q27" id="q27">
+				<option value="White or Caucasian">White or Caucasian</option>
+				<option value="Asian">Asian</option>
+				<option value="Other">Other</option>
+				<option value="Black or African American">Black or African American</option>
+				<option value="Prefer not to say">Prefer not to say</option>
+				
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="q28" id="label-q28">
+				Are you of Spanish, Hispanic, or Latino origin?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="q28" id="q28">
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+				
+			</select>
+		</div>
+
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+
+		<div class="'form-control">
+			<p style="text-align: center;">{{ output }}</p>
+		</div>
+	</form>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>
+		Take a look at the data
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		.container {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+		body {
+			font-family: Verdana;
+			text-align: center;
+			background-color: #cddc39;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 5000px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea{
+			width: 100%;
+			padding: 16px 20px;
+			border: none;
+			border-radius: 4px;
+			background-color: #f1f1f1;
+			}
+
+		/* Styling Button */
+		button {
+			background-color: #04AA6D;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			float: right;
+		}
+
+		button:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Take a look at the data</h1>
+	<div class="container">
+	<form id="form", action="/form_page", method="POST">
+
+
+		<div class="form-control">
+			<label for="q1" id="label-q1">
+				Enter the number of rows that you want to retrieve
+			</label>
+			
+
+			<input type="number" name="q1" name="q1" value="1" />
+		</div>
+		
+		<div class="form-control">
+			<label for="q2" id="label-q2">
+				Enter the number of rows that must be skipped
+			</label>
+			
+
+			<input type="number" name="q2" name="b" value="1" />
+		</div>
+
+		<div class="form-control">
+			<label for="q3" id="label-q3">
+				Select the columns that you want in the output
+			</label>
+			
+			<select name="q3" id="q3" multiple required>
+				<option value="Luddy or not?">Luddy or not?</option>
+				<option value="luddy_department ">luddy_department </option>
+				<option value="sense of belonging _1">sense of belonging _1</option>
+				<option value="sense of belonging _2">sense of belonging _2</option>
+				<option value="sense of belonging _3">sense of belonging _3</option>
+				<option value="sense of belonging _4">sense of belonging _4</option>
+				<option value="sense of belonging _5">sense of belonging _5</option>
+				<option value="sense of belonging _6">sense of belonging _6</option>
+				<option value="sense of belonging _7">sense of belonging _7</option>
+				<option value="sense of belonging _8">sense of belonging _8</option>
+				<option value="sense of belonging _9">sense of belonging _9</option>
+				<option value="sense of belonging _10">sense of belonging _10</option>
+				<option value="sense of belonging _11">sense of belonging _11</option>
+				<option value="sense of belonging _12">sense of belonging _12</option>
+				<option value="sense of belonging _13">sense of belonging _13</option>
+				<option value="sense of belonging _14">sense of belonging _14</option>
+				<option value="sense of belonging _15">sense of belonging _15</option>
+				<option value="sense of belonging _16">sense of belonging _16</option>
+				<option value="Q19">Q19</option>
+				<option value="Q12">Q12</option>
+				<option value="Q13">Q13</option>
+				<option value="Q15">Q15</option>
+				<option value="Q16">Q16</option>
+				<option value="Q17">Q17</option>
+				<option value="Q14">Q14</option>
+				<option value="Q10">Q10</option>
+				<option value="Q11">Q11</option>
+				<option value="Q12.1">Q12.1</option>
+			</select>
+		</div>
+
+
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+	</div>
+	
+</body>
+
+</html> 
+
+
