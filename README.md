@@ -29,20 +29,20 @@ i.	Predict:
   4.	Response(Server-side rendering): An HTML markup containing questions that are required for predicting the target variable value
  
 ii.	Predict
-  1.	URI: http://149.165.168.244:5001/predict
+  1.	URI: http://149.165.154.170:5001/predict
   2.	Method: POST
   3.	Payload: 'q1=Yes&q2=Computer+Science&q3=Strongly+Disagree&q4=Strongly+Disagree&q5=Strongly+Disagree&q6=Strongly+Disagree&q7=Strongly+Disagree&q8=Strongly+Disagree&q9=Strongly+Disagree&q10=Strongly+Disagree&q11=Strongly+Disagree&q12=Strongly+Disagree&q13=Strongly+Disagree&q14=Strongly+Disagree&q15=Strongly+Disagree&q16=Strongly+Disagree&q17=Strongly+Disagree&q18=this+is+my+first+year&q19=Yes&q20=Yes&q21=Yes&q22=Yes&q23=Yes&q24=Yes&q25=Female&q26=White+or+Caucasian&q27=Yes'
   4.	Content-Type: ‘application/x-www-form-urlencoded'Yes&q2=
   5.	Response : The response is a HTML markup which contains the prediction as well as the graph of features that is used to make the prediction.
 		
 iii.	Add Data: 
-  1.	URI: http://149.165.168.244:5001/add_data
+  1.	URI: http://149.165.154.170:5001/add_data
   2.	Method: GET	
   3.	Content-type : text/html, charset=utf-8
   4.	Response(Server-side rendering): An HTML markup containing questions that correspond to the features in the data set.
 
 iv.	Add Data : 
-  1.	URI: http://149.165.168.244:5001/add_data 
+  1.	URI: http://149.165.154.170:5001/add_data 
   2.	Method: POST
   3.	Content-type: ‘application/x-www-form-urlencoded'Yes 
   4.	Payload: 'q1=Yes&q2=Computer+Science&q3=Strongly+Disagree&q4=Strongly+Disagree&q5=Strongly+Disagree&q6=Strongly+Disagree&q7=Strongly+Disagree&q8=Strongly+Disagree&q9=Strongly+Disagree&q10=Strongly+Disagree&q11=Strongly+Disagree&q12=Strongly+Disagree&q13=Strongly+Disagree&q14=Strongly+Disagree&q15=Strongly+Disagree&q16=Strongly+Disagree&q17=Strongly+Disagree&q18=Strongly+Disagree&q19=this+is+my+first+year&q20=Yes&q21=Yes&q22=Yes&q23=Yes&q24=Yes&q25=Yes&q26=Female&q27=White+or+Caucasian&q28=Yes' 
@@ -50,13 +50,13 @@ iv.	Add Data :
 
 
 v.	Get Data : 
-  1.	URI: http://149.165.168.244:5001/form_page 
+  1.	URI: http://149.165.154.170:5001/form_page 
   2.	Method: GET
   3.	Content-type: text/html, charset=utf-8
   4.	Response(Server-side rendering): An HTML markup that asks the user about the data that needs to be retrieved 
 
 vi.	Get Data:
-  1.	URI: http://149.165.168.244:5001/form_page 
+  1.	URI: http://149.165.154.270:5001/form_page 
   2.	Method: POST	
   3.	Payload: 'q1=1&q2=1&q3=Luddy+or+not%3F&q3=luddy_department+&q3=sense+of+belonging+_1&q3=sense+of+belonging+_2' 
   4.	Content-type: ‘application/x-www-form-urlencoded’e&q3=Strongl
