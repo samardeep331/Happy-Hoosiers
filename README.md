@@ -4,7 +4,7 @@ The objective of the project is to develop and deploy a Machine Learning based p
 ## Installation Guidance
 To run the project locally, use the following commands on the terminal
 ```bash
-$ git clone https://github.iu.edu/ISE-E-534-Fall2022/gurudatta-samardeep-e534.git
+$ git clone git@github.com:samardeep331/Happy-Hoosiers.git
 $ cd code
 $ pip install -r requirements.txt
 $ FLASK_APP=app.py flask run --host=0.0.0.0 -p 5001
