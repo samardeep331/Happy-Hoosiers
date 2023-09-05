@@ -23,7 +23,7 @@ Here 'samgurud/e534:latest' image will be downloaded from dockerhub which will b
 Below is the list of API endpoints that were developed for this project:
 
 i.	Predict:
-  1.	URI: http://149.165.168.244:5001/predict
+  1.	URI: http://149.165.154.170:5001/predict
   2.	Method: GET 
   3.	Content-type : text/html, charset=utf-8
   4.	Response(Server-side rendering): An HTML markup containing questions that are required for predicting the target variable value
